@@ -1,0 +1,23 @@
+# default
+node_modules/
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+
+# Expo-Project files
+.expo*
+assets/
+App.js
+app.json
+babel.config.js
+package-lock.json
+package.json

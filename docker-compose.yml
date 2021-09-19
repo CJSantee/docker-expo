@@ -1,0 +1,17 @@
+version: '3.7' 
+
+services:
+   expo: 
+      container_name: expo-container
+      build: ./expo-project/ # Specify the directory of the Dockerfile
+      ports: # Specify port-forwarding
+         - 19000:19000 
+         - 19001:19001
+         - 19002:19002
+      volumes:
+         - ./expo-project/:/usr/app # Link host directory to container
+         - nodemodules:/usr/app/node_modules
+      env_file: .env
+   
+volumes: 
+  nodemodules: {}
